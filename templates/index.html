@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mode" id="mode">
+        <div class="mode-button" id="mode-button"></div>
+    </div>
+    <nav>
+        <ul>
+            <li>Strona główna</li>
+            <li>Cośtam</li>
+            <li>Oferta</li>
+            <li>Kontakt</li>
+        </ul>
+    </nav>
+    <main>
+        <p class="main-motto">Zdjęcia na Twoje zajęcia</p>
+    </main>
+    <div class="main-page">
+        <h1>Studio fotograficzne</h1>
+        <p>Naszym celem jest, aby zdjęcia były jak najlepszej jakości. Nie bawimy się w amatorszczyznę, tutaj króluje profesjonalizm!</p>
+        <span class="separating-line"></span>
+        <div class="main-page-info">
+            <h2>Galeria fotografii</h2>
+            <ul>
+                <li><img src="/static/images/fot1.jpg" alt="fot1"></li>
+                <li><img src="/static/images/fot2.jpg" alt="fot2"></li>
+                <li><img src="/static/images/fot3.jpg" alt="fot3"></li>
+                <li><img src="/static/images/fot4.jpg" alt="fot4"></li>
+                <li><img src="/static/images/fot6.jpg" alt="fot6"></li>
+                <li><img src="/static/images/fot5.jpg" alt="fot5"></li>
+            </ul>
+            <h2>Oferta</h2>
+            <ul>
+                <li><img src="/static/images/fot7.jpg" alt="fot1"></li>
+                <li><img src="/static/images/fot8.jpg" alt="fot1"></li>
+                <li><img src="/static/images/fot9.jpg" alt="fot1"></li>
+                <li><img src="/static/images/fot10.jpg" alt="fot1"></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('mode').addEventListener("click", function(){
+            document.getElementById('mode-button').classList.toggle('mode-button-active');
+            document.body.classList.toggle('dark-mode');
+        })
+    </script>
+</body>
+</html>
